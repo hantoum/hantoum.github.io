@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "type": "link",
+  "provider_name": "GitHub Pages",
+  "provider_url": "https://hantoum.github.io",
+  "title": "Behind The Scenes",
+  "url": "https://hantoum.github.io/site-E",
+  "author_name": "Your Name",
+  "author_url": "https://hantoum.github.io",
+  "html": "<iframe width=\"800\" height=\"450\" src=\"https://hantoum.github.io/site-E\" frameborder=\"0\" allowfullscreen></iframe>",
+  "thumbnail_url": "https://hantoum.github.io/assets/images/thumbnail.jpg",
+  "thumbnail_width": 800,
+  "thumbnail_height": 450
+}
