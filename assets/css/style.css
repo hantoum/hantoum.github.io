@@ -11,34 +11,37 @@ Tags: portfolio, responsive, case study, fullscreen cover, content editor
 Text Domain: semplice
 */
 
-/* Default styling for larger screens (desktops, tablets) */
-body {
-  font-size: 18px;
-  padding: 20px;
-  margin: 0;
+/* === Scoped styles for the "Neuron Turn-On" page === */
+.page-neuron-turn-on {
   font-family: Arial, sans-serif;
 }
 
-.container {
+.page-neuron-turn-on body {
+  font-size: 18px;
+  padding: 20px;
+  margin: 0;
+}
+
+.page-neuron-turn-on .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center items horizontally */
 }
 
-.example {
+.page-neuron-turn-on .example {
   font-size: 16px;
   padding: 15px;
 }
 
 /* Page title and subtitle section */
-.page-title-section .main-title {
+.page-neuron-turn-on .page-title-section .main-title {
   font-size: 3rem; /* Default size for larger screens */
   line-height: 1.4;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.page-title-section .subtitle {
+.page-neuron-turn-on .page-title-section .subtitle {
   font-size: 1.5rem; /* Default size for larger screens */
   line-height: 1.8;
   text-align: center;
@@ -46,45 +49,48 @@ body {
 }
 
 /* Adjustments for headings and container on larger screens */
-.header, .title-container h1, .title-container h2 {
+.page-neuron-turn-on .header, 
+.page-neuron-turn-on .title-container h1, 
+.page-neuron-turn-on .title-container h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.footer {
+.page-neuron-turn-on .footer {
   text-align: center;
   padding: 20px;
 }
 
 /* Media query for tablets and small desktops (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
-  body {
+  .page-neuron-turn-on body {
     font-size: 16px;
     padding: 15px;
   }
 
-  .container {
+  .page-neuron-turn-on .container {
     flex-direction: column; /* Stack items vertically on small screens */
   }
 
-  .example {
+  .page-neuron-turn-on .example {
     font-size: 14px;
     padding: 12px;
   }
 
-  .header, .footer {
+  .page-neuron-turn-on .header, 
+  .page-neuron-turn-on .footer {
     text-align: center;
     font-size: 1.5rem;  /* Adjust font size */
   }
 
   /* Adjust title and subtitle */
-  .page-title-section .main-title {
+  .page-neuron-turn-on .page-title-section .main-title {
     font-size: 2.5rem; /* Adjust for tablets */
     margin-bottom: 10px; /* Ensure space between title and subtitle */
   }
 
-  .page-title-section .subtitle {
+  .page-neuron-turn-on .page-title-section .subtitle {
     font-size: 1.3rem; /* Adjust for tablets */
     margin-bottom: 15px; /* Extra spacing for better separation */
   }
@@ -92,94 +98,94 @@ body {
 
 /* Media query for mobile devices (max-width: 768px) */
 @media screen and (max-width: 768px) {
-  body {
+  .page-neuron-turn-on body {
     font-size: 14px;
     padding: 10px;
   }
 
-  .container {
+  .page-neuron-turn-on .container {
     flex-direction: column; /* Stack items vertically on small screens */
   }
 
-  .example {
+  .page-neuron-turn-on .example {
     font-size: 12px;
     padding: 10px;
   }
 
-  .header {
+  .page-neuron-turn-on .header {
     font-size: 1.6rem;
     text-align: center;
   }
 
-  .footer {
+  .page-neuron-turn-on .footer {
     text-align: center;
     padding: 20px;
   }
 
   /* Title and subtitle adjustments */
-  .page-title-section .main-title {
+  .page-neuron-turn-on .page-title-section .main-title {
     font-size: 1.8rem; /* Adjust for mobile */
     text-align: center;
     margin-bottom: 8px; /* Adjust space between title and subtitle */
   }
 
-  .page-title-section .subtitle {
+  .page-neuron-turn-on .page-title-section .subtitle {
     font-size: 1.2rem; /* Adjust for mobile */
     text-align: center;
     margin-bottom: 12px; /* Extra spacing for mobile devices */
   }
 
   /* Ensure that elements have adequate space */
-  .page-title-section {
+  .page-neuron-turn-on .page-title-section {
     margin-bottom: 15px;
   }
 }
 
 /* Media query for very small devices (max-width: 480px) */
 @media screen and (max-width: 480px) {
-  body {
+  .page-neuron-turn-on body {
     font-size: 12px;
     padding: 5px;
   }
 
-  .container {
+  .page-neuron-turn-on .container {
     flex-direction: column; /* Stack items vertically on very small screens */
   }
 
-  .example {
+  .page-neuron-turn-on .example {
     font-size: 10px;
     padding: 8px;
   }
 
-  .header {
+  .page-neuron-turn-on .header {
     font-size: 1.3rem;
     text-align: center;
   }
 
-  .footer {
+  .page-neuron-turn-on .footer {
     font-size: 10px;
     text-align: center;
     padding: 15px;
   }
 
-  .example img {
+  .page-neuron-turn-on .example img {
     max-width: 100%; /* Ensure images are responsive */
   }
 
   /* Title and subtitle adjustments */
-  .page-title-section .main-title {
+  .page-neuron-turn-on .page-title-section .main-title {
     font-size: 1.6rem; /* Adjust for very small screens */
     text-align: center;
     margin-bottom: 6px; /* Adjust margin for better alignment */
   }
 
-  .page-title-section .subtitle {
+  .page-neuron-turn-on .page-title-section .subtitle {
     font-size: 1rem; /* Adjust for very small screens */
     text-align: center;
     margin-bottom: 10px; /* Extra spacing for very small screens */
   }
 
-  .page-title-section {
+  .page-neuron-turn-on .page-title-section {
     margin-bottom: 10px;
   }
 }
