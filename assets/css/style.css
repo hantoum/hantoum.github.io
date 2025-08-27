@@ -12,7 +12,6 @@ Text Domain: semplice
 */
 
 /*
-
     How to add Custom CSS?
     ------------------------------------------------------------------------------------------------------------------------------------
     Semplice is coded with SASS (http://sass-lang.com/) 
@@ -20,23 +19,37 @@ Text Domain: semplice
     
     # Use the Custom CSS fields in the Theme Options under 'Customize -> Advanced'
     # Add a child theme, more info in the Documentation. http//help.semplice.com
-
 */
 
 /* Default styling for larger screens (desktops, tablets) */
 body {
   font-size: 18px;
   padding: 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
 }
 
 .example {
   font-size: 16px;
   padding: 15px;
+}
+
+/* Adjustments for headings and container on larger screens */
+.header, .title-container h1, .title-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
 }
 
 /* Media query for tablets and small desktops (max-width: 1024px) */
@@ -53,6 +66,20 @@ body {
   .example {
     font-size: 14px;
     padding: 12px;
+  }
+
+  .header, .footer {
+    text-align: center;
+    font-size: 1.5rem;  /* Adjust font size */
+  }
+
+  /* Adjust title and subtitle */
+  .title-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .title-container h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -73,13 +100,29 @@ body {
   }
 
   .header {
-    font-size: 20px;
+    font-size: 1.6rem;
     text-align: center;
   }
 
   .footer {
     text-align: center;
     padding: 20px;
+  }
+
+  /* Title and subtitle adjustments */
+  .title-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .title-container h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Ensure that elements have adequate space */
+  .title-container {
+    margin-bottom: 15px;
   }
 }
 
@@ -100,7 +143,7 @@ body {
   }
 
   .header {
-    font-size: 18px;
+    font-size: 1.3rem;
     text-align: center;
   }
 
@@ -112,5 +155,20 @@ body {
 
   .example img {
     max-width: 100%; /* Ensure images are responsive */
+  }
+
+  /* Title and subtitle adjustments */
+  .title-container h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .title-container h2 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .title-container {
+    margin-bottom: 10px;
   }
 }
