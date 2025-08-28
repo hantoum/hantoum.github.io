@@ -1,3 +1,6 @@
+/* =======================
+   Font Face Definitions
+========================== */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
@@ -54,7 +57,33 @@
   src: url('/assets/fonts/Inter-Bold.woff') format('woff');
 }
 
-/* Reset and box-sizing */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/Inter-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/assets/fonts/Inter-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gallient';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('/assets/fonts/Gallient-Regular.woff') format('woff');
+}
+
+/* =======================
+   Reset and Box-Sizing
+========================== */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -62,13 +91,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #141414;
   line-height: 1.6;
   background-color: #fff;
 }
 
-/* Container and Grid Layout */
+/* =======================
+   Container and Layout
+========================== */
 .container {
   width: 100%;
   max-width: 1140px;
@@ -98,7 +129,9 @@ body {
   display: none;
 }
 
-/* Typography */
+/* =======================
+   Typography
+========================== */
 .main-title {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -135,7 +168,29 @@ body {
   text-decoration: underline;
 }
 
-/* Responsive Breakpoints */
+/* =======================
+   Font Utility Classes
+========================== */
+.font_qu1i94wgj {
+  font-family: 'Gallient', serif;
+  font-weight: normal;
+}
+
+.font_1amtradbs {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.028rem;
+}
+
+.font_xgalvbuih {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+/* =======================
+   Responsive Breakpoints
+========================== */
 @media (min-width: 768px) {
   [data-xl-width="8"] {
     width: 66.6667%;
