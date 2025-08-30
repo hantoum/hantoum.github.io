@@ -1,28 +1,23 @@
-/* Default styling for larger screens (xl) */
-.unlock-text-xl {
-  font-size: 4.66667rem;
-  line-height: 5.33333rem;
-  letter-spacing: 0.00555556rem;
-  font-family: 'Contralto Big', sans-serif; /* Make sure the font is defined here */
+/* Responsive font styling for the unlock title */
+
+/* Add this to your <head> for proper scaling (HTML file): */
+/* <meta name="viewport" content="width=device-width, initial-scale=1"> */
+
+/* Main unlock title styling */
+.unlock-title {
+  font-family: 'Contralto Big', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.66667rem);   /* Responsive scaling: min, fluid, max */
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  font-weight: normal;      /* Use 'bold' if preferred */
+  color: #222;              /* Optional: set your color */
+  margin: 0 0 1rem 0;
 }
 
-/* Styling for smaller screens (xs) */
-.unlock-text-xs {
-  font-size: 3.55556rem;
-  line-height: 4rem;
-  letter-spacing: -0.0555556rem;
-  font-family: 'Contralto Big', sans-serif; /* Use the same font here */
-}
-
-/* Responsive adjustments for mobile screens */
-@media (max-width: 768px) {
-  .unlock-text-xl {
-    font-size: 3.5rem;  /* Adjust the font size for medium screens */
-    line-height: 4rem;
-  }
-
-  .unlock-text-xs {
-    font-size: 2.8rem;  /* Adjust the font size for small screens */
-    line-height: 3.4rem;
+/* Adjust for VERY small screens if you want further tuning */
+@media (max-width: 400px) {
+  .unlock-title {
+    font-size: clamp(2rem, 7vw, 3.55556rem);
+    line-height: 1.1;
   }
 }
